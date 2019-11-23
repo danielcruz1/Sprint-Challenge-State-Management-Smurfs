@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import { smurfList } from '../actions/smurfList';
 import "./App.css";
 
-
-
 function App(props) {
 
   useEffect(() => {

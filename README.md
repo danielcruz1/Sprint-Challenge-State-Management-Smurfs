@@ -23,10 +23,25 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What problem does the context API help solve?
+
+Context API gives us the ability to store data on a context object. Data is retrieved by the components that need it by accessing the context object, not props. This means no more prop-drilling! 
+
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+Actions are payloads of information that send data from the application to the store. 	This is important as actions are the only source of data for the store. Reducers specify how the application’s state changes in response to the actions sent to the store. Reducers tell us how the application’s state changes. The store brings the two 	together. It’s main roles are to hold application state, allow access to state, and allow state to be updated. The store is known as a “single source of truth” because it should 	never be rewritten or reshaped. 
+
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+Application state is global and component state is local. If you need to change state inside a component that won’t need to be changed anywhere else (or possibly just it’s children) use component state. 
+
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+Redux-thunk is a middleware that allows Redux to run asynchronous operations. Thunks are used in action creators to run async operations, e.g. promises (think Axios). 
+
 - [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+
+Redux, because it’s the most familiar at this point! 
+
 
 ## Project Set Up
 
